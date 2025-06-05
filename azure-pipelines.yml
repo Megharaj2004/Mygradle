@@ -1,0 +1,13 @@
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo Myfirst Azure Pipeline for gradle project
+  displayName: 'Run a one-line script'
+- script: gradle build
+  displayName: 'Build with maven'
+- script: gradle run
+  displayName: 'Running jar'
